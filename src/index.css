@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import "tailwindcss";
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  margin: auto;
+  font-family: "Mona Sans", sans-serif;
+  color: white;
+
+  background-color: #ebf4fb;
+}
+
+@theme {
+  --font-sans: "Mona Sans", sans-serif;
+  --color-Subtext: #545454;
+  --color-Hovers: #3b5ab3;
+}
+
+@layer components {
+  .Navbar {
+    @apply flex fixed top-0 w-full z-[999] bg-black/60 px-3;
+  }
+  .bg-setting {
+    @apply bg-cover bg-center bg-no-repeat;
+  }
+
+  .tutorialSection {
+    @apply min-h-dvh w-full flex-col md:flex-row  justify-center items-center bg-[#0E1E40];
+  }
+}
+
+@layer utilities {
+  /** Navbar */
+  .NavText {
+    @apply flex gap-4 flex-1 justify-end py-4;
+  }
+  .Logos {
+    @apply flex justify-center items-center py-4 gap-2;
+  }
+  /*  */
+  .inputElement {
+    @apply placeholder:text-white/50
+      px-1 py-3 
+    rounded-t-lg
+      border border-transparent 
+      focus:text-white 
+      hover:outline-none 
+      focus:outline-none focus:border-transparent /* Double protection */
+      active:outline-none 
+     
+      text-center
+      bg-transparent;
+  }
+  .borderTest {
+    @apply border-[1px] border-amber-600;
+  }
+  .center {
+    @apply flex justify-center items-center;
+  }
+}
