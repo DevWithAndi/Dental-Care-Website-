@@ -8,5 +8,6 @@ export default defineConfig({
     port: 5533,
     open: true,
   },
+  base: process.env.VITE_BASE_PATH || "/Dental-Care-Website-",
   // base: "",
 });

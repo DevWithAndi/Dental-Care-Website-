@@ -5,13 +5,11 @@ function VideoPlayer() {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [hasStarted, setHasStarted] = useState(false);
-  const [hasEnded, setHasEnded] = useState(false); // New state for video end
+  const [hasEnded, setHasEnded] = useState(false);
   const videoRef = useRef(null);
 
-  // Toggle play/pause/repeat
   const togglePlay = () => {
     if (hasEnded) {
-      // If video ended, restart from beginning
       videoRef.current.currentTime = 0;
       videoRef.current.play();
       setHasEnded(false);
@@ -26,7 +24,6 @@ function VideoPlayer() {
     }
   };
 
-  // Update current time and handle video end
   useEffect(() => {
     const video = videoRef.current;
 
@@ -64,7 +61,6 @@ function VideoPlayer() {
     }
   };
 
-  // Format time (e.g., 125 → "2:05")
   const formatTime = (time) => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
