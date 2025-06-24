@@ -6,6 +6,8 @@
 
 # Demo
 
+### [Live Demo](https://dental-care-website-mu.vercel.app/)
+
 ### Preview Images
 
 <div align = "center">
@@ -26,28 +28,18 @@
 
 </div>
 
-![Terminal](https://img.shields.io/badge/-How_to_Install-4A71E0?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Terminal](https://img.shields.io/badge/-Getting_started-4A71E0?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
-After you clone or fork it, don't forget to install the package using the command below :
+After cloning or forking the repository, follow these steps:
+
+### 1.Install dependencies :
 
 ```bash
 npm install
 ```
 
-then run it using this command :
+### 2. Run the server locally:
 
 ```bash
 npm run dev
 ```
-
-##
-
-![Terminal](https://img.shields.io/badge/-How_to_Build-DE9358?style=for-the-badge&logo=gnu-bash&logoColor=white)
-
-```bash
-npm build
-```
-
-##
-
-![Terminal](https://img.shields.io/badge/-How_to_Deploy-0E1E40?style=for-the-badge&logo=gnu-bash&logoColor=white)
