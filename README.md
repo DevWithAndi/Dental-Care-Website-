@@ -1,5 +1,5 @@
 <div align = "center">
-
+   
 </div>
 
 <div align = "">
@@ -43,3 +43,9 @@ npm install
 ```bash
 npm run dev
 ```
+
+# Credits & Attribution
+
+#### This project implements a UI design from an open Figma community file
+
+### Note: If you're the original designer of this Figma file, please reach out—I'd love to give proper credit!
